@@ -1,0 +1,11 @@
+//Style guides
+@import'config/_fonts.scss';
+@import'config/_colors.scss';
+
+// General styles
+@import'base/_normalize.scss';
+@import'base/_base.scss';
+
+// Blocks 
+@import'blocks/_footer.scss';
+@import'blocks/_main.scss';

@@ -1,0 +1,26 @@
+.container {
+    width: 90%;
+    padding-top: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+    
+    @media screen and (min-width: 992px) {
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+    @media screen and (min-width: 1440px) {
+        max-width: 1440px;
+    }
+}
+
+.header__title {
+    font-family: $header-font, monospace;
+    font-weight: bold;
+    font-size: 24px;
+    color: $gray1;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) {
+        font-weight: 700;
+    }
+}
