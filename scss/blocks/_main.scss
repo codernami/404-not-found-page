@@ -1,3 +1,7 @@
+@use '../config' as *;
+@use '../base' as *;
+
+
 /* Contains main image and message */
 .main {
     font-family: $main-font, monospace;
