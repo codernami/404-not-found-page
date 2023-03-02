@@ -1,8 +1,8 @@
 # 404 Not Found Page
+[Live Site]()
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/paths/responsive-web-developer) challenge. 
 
-- User story: I can see a page following the given design
 
 
-![preview](css/assets/responsive.png)
+![preview](css/assets/preview.png)
