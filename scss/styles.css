@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -356,128 +355,43 @@ template {
 }
 
 /*# sourceMappingURL=normalize.css.map */
-.container {
-  width: 90%;
-  padding-top: 2rem;
-  margin-right: auto;
-  margin-left: auto;
-}
-@media screen and (min-width: 992px) {
-  .container {
-    padding-right: 4rem;
-    padding-left: 4rem;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-  }
-}
-
-.header__title {
-  font-family: "Inconsolata, monospace", monospace;
-  font-weight: bold;
-  font-size: 24px;
-  color: #333333;
-  text-transform: uppercase;
-}
-@media screen and (min-width: 768px) {
-  .header__title {
-    font-weight: 700;
-  }
-}
-
-/* Contains main image and message */
-.main {
-  font-family: "Space Mono", monospace, monospace;
-  margin-top: 2rem;
-}
-@media screen and (min-width: 600px) {
-  .main {
-    display: flex;
-    justify-content: space-evenly;
-  }
-}
-@media screen and (min-width: 992px) {
-  .main {
-    margin-top: 4rem;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .main {
-    margin-top: 8rem;
-  }
-}
-
-/* Main image container */
-.frame {
-  margin-top: 2rem;
-}
-@media screen and (min-width: 600px) {
-  .frame {
-    width: 35%;
-  }
-}
-@media screen and (min-width: 992px) {
-  .frame {
-    width: 40%;
-  }
-}
-
-/* Main message container */
-.message {
-  width: 300px;
+body {
+  max-width: 1200px;
+  min-height: 100vh;
+  padding: 1rem;
   margin: 0 auto;
+  font-size: clamp(14px, 2vw, 16px);
 }
-@media screen and (min-width: 768px) {
-  .message {
-    width: auto;
+
+@media only screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
+.message {
+  font-family: "Space Mono", monospace, monospace;
+}
 .message__title {
-  font-size: 40px;
+  font-size: 42px;
   font-weight: bold;
   color: #333333;
   line-height: 71px;
   margin-bottom: 1rem;
+  max-width: 350px;
 }
-@media screen and (min-width: 768px) {
-  .message__title {
-    width: 370px;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .message__title {
-    width: 560px;
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 94.78px;
-  }
-}
-
 .message__text {
-  width: 255px;
-  font-size: 15px;
-  line-height: 27px;
-  color: #333333;
-}
-@media screen and (min-width: 1440px) {
-  .message__text {
-    width: 410px;
-    margin-bottom: 1rem;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 35.54px;
-  }
+  padding-right: 7rem;
+  line-height: 1.5;
 }
 
 .button {
-  width: 216px;
-  height: 68px;
+  width: 260px;
+  height: 70px;
   margin-top: 3rem;
   padding: 1.5rem;
-  font-size: 14px;
   font-weight: bold;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -485,10 +399,18 @@ template {
   border: none;
   background-color: #333333;
 }
-@media screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
   .button:hover {
     background-color: #FF6D5B;
   }
+}
+
+.title {
+  font-family: "Inconsolata, monospace", monospace;
+  font-weight: bold;
+  color: #333333;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

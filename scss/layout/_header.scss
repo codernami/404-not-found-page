@@ -1,0 +1,9 @@
+@use '../abstracts' as *;
+
+.title {
+    font-family: $header-font, monospace;
+    font-weight: bold;   
+    color: $dark-gray;
+    text-transform: uppercase;  
+    margin-bottom: 5rem; 
+}

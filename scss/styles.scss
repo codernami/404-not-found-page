@@ -1,10 +1,7 @@
-//Style guides
-@use'config/fonts';
-@use'config/colors';
-
-// General styles
-@use'base/normalize';
-@use'base/base';
-
-// Blocks 
-@use'blocks/main';
+@use'vendors/normalize';
+@use'abstracts/fonts';
+@use'abstracts/colors';
+@use'abstracts/breakpoints';
+@use'layout/body';
+@use'layout/article';
+@use'layout/header';

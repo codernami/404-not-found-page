@@ -1,0 +1,46 @@
+@use '../abstracts' as *;
+
+
+.container {
+    @include medium{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;      
+    }    
+}
+
+.message {
+    font-family: $main-font, monospace;
+
+    &__title {
+        font-size: 42px;
+        font-weight: bold;
+        color: $dark-gray;
+        line-height: 71px;
+        margin-bottom: 1rem;
+        max-width: 350px;
+    }
+    &__text {
+        padding-right: 7rem;
+        line-height: 1.5;
+    }
+}
+
+.button {
+    width: 260px;
+    height: 70px;
+    margin-top: 3rem;
+    padding: 1.5rem;
+    font-weight: bold;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    background-color: $dark-gray;
+
+    @include medium {
+        &:hover {
+            background-color: $hover;
+        }
+    }
+}
